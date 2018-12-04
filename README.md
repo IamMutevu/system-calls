@@ -12,21 +12,25 @@ According to our research, we found out that system calls can be roughly grouped
         get/set process attributes
         wait for time, wait event, signal event
         allocate, free memory
-	2. File Management
+	
+        2. File Management
         create file, delete file
         open, close
         read, write, reposition
         get/set file attributes
-	3. Device Management
+	
+        3. Device Management
         request device, release device
         read, write, reposition
         get/set device attributes
         logically attach or detach devices
-	4. Information Maintenance
+	
+        4. Information Maintenance
         get/set time or date
         get/set system data
         get/set process, file, or device attributes
-	5. Communication
+	
+        5. Communication
         create, delete communication connection
         send, receive messages
         transfer status information
