@@ -3,6 +3,7 @@ The repository contains group work assignment to implement system calls.
 
 
 According to our research, we found out that system calls can be roughly grouped into five major categories:
+
 	1. Process Control
         load
         execute
@@ -12,7 +13,7 @@ According to our research, we found out that system calls can be roughly grouped
         get/set process attributes
         wait for time, wait event, signal event
         allocate, free memory
-	
+
         2. File Management
         create file, delete file
         open, close
@@ -37,6 +38,7 @@ According to our research, we found out that system calls can be roughly grouped
         attach or detach remote devices
 
 The categories implemented in the assignment include:
+
         1. Process Control
         2. Memory management
         3. Communication
