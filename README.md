@@ -36,3 +36,10 @@ According to our research, we found out that system calls can be roughly grouped
         transfer status information
         attach or detach remote devices
 
+The categories implemented in the assignment include:
+        1. Process Control
+        2. Memory management
+        3. Communication
+        4. Information maintenance
+        5. File management
+        6. Device management
