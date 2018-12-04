@@ -13,7 +13,7 @@ int main(int agrc, char * argv[])
 	struct sockaddr_in address;
 	int addrlen = sizeof(address);
 	char buffer[2048] = {0};
-	char *fun = "YAAAAAAAAAAAY";
+	char *fun = "Hello client, I received your message. I am at your service";
 
 	/*------------------------1.SOCKET CREATION-------------------------*/
 	if((sock_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0)
@@ -79,7 +79,7 @@ int main(int agrc, char * argv[])
 	valread = read(new_socket, buffer, 2048);
 	printf("%s\n", buffer);
 	send(new_socket, fun, strlen(fun), 0);
-	printf("THE MESSAGE SENT\n");
+	printf("Response sent back to client\n");
 	return 0;
 
 

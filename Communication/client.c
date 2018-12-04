@@ -12,7 +12,7 @@ int main(int agrc, char * argv[])
 	struct sockaddr_in address;
 	int sock = 0, valread;
 	struct sockaddr_in serv_addr;
-	char *fun_client = "I AM CLIENT, I AM HERE";
+	char *fun_client = "Hello server, I am a client!";
 	char buffer[2048] = {0};
 
 	/*------------------------1.SOCKET CREATION-------------------------*/
@@ -36,14 +36,14 @@ int main(int agrc, char * argv[])
 	}
 
 	/*------------------------3.ESTABLISH CONNECTION-------------------------*/
-	if (connect(sock, (struct sockaddr*)&serv_addr, sizeof(serv_addr) < 0))
+	if (connect(sock, (struct sockaddr*)&serv_addr, sizeof(serv_addr)) < 0)
 	{
 		printf("\nNo connection\n");
 		return -1;
 	}
 
 	send(sock, fun_client, strlen(fun_client), 0);
-	printf("\nHello message sent\n");
+	printf("\n\nThe server received the message.\n");
 	valread = read(sock, buffer,2048);
 	printf("%s\n", buffer);
 	return 0;
