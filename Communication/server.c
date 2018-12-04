@@ -10,7 +10,7 @@
 int main(int agrc, char * argv[]) 
 {
 	int sock_fd, new_socket, valread;
-	struct sockaddr_in_address;
+	struct sockaddr_in address;
 	int addrlen = sizeof(address);
 	char buffer[2048] = {0};
 	char *fun = "YAAAAAAAAAAAY";
