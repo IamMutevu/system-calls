@@ -1,4 +1,4 @@
-# System_calls
+# System calls
 The repository contains group work assignment to implement system calls. 
 
 
